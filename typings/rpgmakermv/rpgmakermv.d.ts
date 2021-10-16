@@ -1,4 +1,4 @@
-/// <reference types="pixi-tilemap" />
+/// <reference types="https://esm.sh/pixi-tilemap" />
 /// <reference path="../lib/lib.dom.d.ts" />
 
 /// <reference path="./data.d.ts" />
