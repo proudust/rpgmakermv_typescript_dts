@@ -1356,7 +1356,7 @@ declare class ResourceHandler
     static _reloaders: Function[];
     static _defaultRetryInterval: number[];
 
-    static createLoader(url: string, retryMethod: Function, resignMethod: Function, retryInterval: number): void;
+    static createLoader(url: string, retryMethod: Function, resignMethod: Function, retryInterval: number): () => void;
     static exists(): boolean;
     static retry(): void;
 }

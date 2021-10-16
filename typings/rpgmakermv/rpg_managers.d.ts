@@ -41,6 +41,7 @@ declare var $gameActors      : Game_Actors;
 declare var $gameParty       : Game_Party;
 declare var $gameTroop       : Game_Troop;
 declare var $gamePlayer      : Game_Player;
+declare var $plugins         : IDataPlugin[];
 declare var $testEvent       : any; // TODO
 
 declare interface ISavefileInfo
@@ -75,6 +76,7 @@ declare class DataManager
     static _globalId       : "RPGMV";
     static _lastAccessedId : number;
     static _errorUrl       : string;
+    static _mapLoader      : () => void;
 
     static _databaseFiles: {name: string, src: string}[];
     /**
